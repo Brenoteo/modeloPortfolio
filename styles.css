@@ -1,0 +1,247 @@
+/* Reset */
+*{
+  box-sizing: border-box; /* Não deixa a borda aumentar a largura dos elementos */
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Início Header */
+.nav{
+  background-color: #181818;
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
+  position: sticky; /* Deixa o menu fixo enquanto rola a página */
+  top: 0; /* Deixa o menu no topo */
+  width: 100%;
+  z-index: 9; /* Deixa sobreposto */
+}
+
+.nav-list{
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin-right: 28px;
+}
+
+a{
+  border: 1px solid transparent;
+  color: #ddd;
+  padding: 20px;
+  text-decoration: none;
+
+  overflow: hidden;
+  position: relative;
+  transition: 0.8s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+li:hover{
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+/* Fim Header */
+
+/* Início Main */
+.main{
+  background-color: #000;
+  background-image: url('images/programador.png');
+  height: calc(100vh - 80px);
+  width: 100%;
+
+  align-items: center;
+  display: flex;
+  padding-left: 10%;
+}
+
+.main h1{
+  color: #fff;
+  font-size: 54px;
+}
+  
+.main p{
+  color: #1e96fc;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.main .call-to-action{
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px;
+
+  transition: 0.9s;
+}
+
+.main .call-to-action:hover{
+  transform: scale(1.1);
+}
+
+.main a{
+  color: #181818;
+  text-decoration: none;
+}
+/* Fim Main */
+
+/* Início Sobre */
+.about{
+  background-color: #fff;
+  padding: 80px 10%; /* Cima/Baixo e Direita/Esquerda */
+  width: 100%; /* 100% da área (Sobre/about) */
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about div{
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+.about img{
+  border-radius: 8px;
+  max-width: 450px;
+}
+
+.about img:hover{
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.about div h2{
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+/* Fim Sobre*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Início Animações */
+/* Início Animação Nav li */
+@-webkit-keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* Fim Animação Nav li */
+
+
+/* Início Animação IMG */
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* Fim Animação IMG */
+/* Fim Animações */
