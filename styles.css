@@ -178,16 +178,48 @@ li:hover{
   animation: swing 1s ease;
   animation-iteration-count: 1;
 }
+
+.action{
+  background-color: #181818;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 18px;
+  padding: 12px 28px;
+}
+
+.action:hover{
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 /* Fim Projects */
 
+/* Início Rodapé */
+footer{
+  align-items: center;
+  background-color: #181818;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  width: 100%;
+}
 
+footer a{
+  color: #fff;
+  text-decoration: none;
+}
 
-
-
-
-
-
-
+footer p{
+  margin-left: 12px;
+}
+/* Fim Rodapé */
 
 
 /* Início Animações */
@@ -305,4 +337,42 @@ li:hover{
   }
 }
 /* Fim Animação <project-list */
+/* Início Animação <project-list action */
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* Fim Animação <project-list action */
 /* Fim Animações */
