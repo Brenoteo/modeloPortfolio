@@ -137,9 +137,48 @@ li:hover{
 }
 /* Fim Sobre*/
 
+/* Início Projects */
+.projects{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+  width: 100%;
+}
 
+.projects h2{
+  font-size: 32px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
 
+.projects p{
+  font-style: italic;
+  margin-bottom: 40px;
+}
 
+.project-list{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.project-list img{
+  margin: 0 0.5%;
+  opacity: 0.8;
+  transition: 0.9s;
+  width: 22%;
+}
+
+.project-list img:hover{
+  opacity: 1;
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
+}
+/* Fim Projects */
 
 
 
@@ -152,7 +191,7 @@ li:hover{
 
 
 /* Início Animações */
-/* Início Animação Nav li */
+/* Início Animação <header> Nav li */
 @-webkit-keyframes heartBeat {
   0% {
     -webkit-transform: scale(1);
@@ -206,10 +245,9 @@ li:hover{
     transform: scale(1);
   }
 }
-/* Fim Animação Nav li */
+/* Fim Animação <header> Nav li */
 
-
-/* Início Animação IMG */
+/* Início Animação <about> IMG */
 @-webkit-keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -243,5 +281,28 @@ li:hover{
     transform: scale3d(1, 1, 1);
   }
 }
-/* Fim Animação IMG */
+/* Fim Animação <about> IMG */
+
+/* Início Animação <project-list> */
+@keyframes swing{
+  15% {
+  transform: translateX(5px);
+  }
+  30% {
+  transform: translateX(-5px);
+  }
+  50% {
+  transform: translateX(3px);
+  }
+  65% {
+  transform: translateX(-3px);
+  }
+  80% {
+  transform: translateX(2px);
+  }
+  100% {
+  transform: translateX(0);
+  }
+}
+/* Fim Animação <project-list */
 /* Fim Animações */
