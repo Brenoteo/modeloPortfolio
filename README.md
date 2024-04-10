@@ -1,2 +1,2 @@
 # modeloPortfolio
-Portfólio simples com efeitos interativos.
+Portfólio simples interativo.
