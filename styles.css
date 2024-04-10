@@ -10,6 +10,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Início Header */
 .nav{
   background-color: #181818;
@@ -220,6 +224,50 @@ footer p{
   margin-left: 12px;
 }
 /* Fim Rodapé */
+
+/* Responsividade */
+@media (max-width: 1050px){
+  .main{
+    background-size: cover;
+  }
+  .main h1{
+    font-size: 45px;
+  }
+  .main p{
+    font-size: 18px;
+  }
+
+  .about{
+    flex-direction: column;
+    padding: 80px 0 0 0;
+  }
+  .about div{
+    max-width: 80%;
+  }
+  .about div h2{
+    font-size: 45px;
+  }
+  .about img{
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .projects img{
+    width: 27.5%;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+  footer h3{
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  footer p{
+    margin: 0;
+  }
+}
+
 
 
 /* Início Animações */
